@@ -1,6 +1,6 @@
 body {
-    background-image: url ("assets/images/cave2.png");
-    background-repeat: repeat-y;
+    background-image: url("/assets/images/antelope-canyon.jpg");
+    /* background-repeat: repeat-y; */
     /* background-color: #c71717; */
 }
 
@@ -29,7 +29,7 @@ div.myPadding {
     color: green;
 }
 
-#randomNumber {
+.targetNumber {
     background-color: #5ABB7C;
     font-size: 1.5rem;
 }
@@ -42,6 +42,24 @@ div.myPadding {
     width: 95%;
 }
 
-.yourScore {
+.score {
     background-color: #2B897D;
+}
+
+@keyframes pulse {
+    0% {
+     transform: scale(1, 1);
+    }
+
+    50% {
+     transform: scale(1.1, 1.1);
+    }
+
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+.pulse {
+    animation: pulse 1s linear infinite;
 }
