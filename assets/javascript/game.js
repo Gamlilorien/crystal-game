@@ -16,6 +16,9 @@ var sapphire;
 var totalScore =0;
 var targetNumber =0;
 
+// Audio
+var audio = new Audio("assets/audio/collect_coin.wav");
+
 // functions
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
@@ -62,6 +65,7 @@ function isLoss() {
 
 function addCrystalValue(crystal) {
     totalScore = totalScore + crystal;
+    audio.play();
     $("#totalScore").text(totalScore);
     // now check for a win
     if (targetNumber === totalScore) {
@@ -85,6 +89,7 @@ function pulseAnimation(idCrystal) {
 // This is the jQuery equalivalent of on document ready
 $(function() {
     newGame();
+    // object.style.backgroundImage="url(assets/images/floor.jpg)"
 
 
 // Set on click trigger for the 4 crystals

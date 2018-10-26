@@ -1,8 +1,8 @@
-body {
+/* This would never work for some reason so I embeded directly on the html page */
+/* body {
     background-image: url("/assets/images/antelope-canyon.jpg");
-    /* background-repeat: repeat-y; */
-    /* background-color: #c71717; */
-}
+    background-repeat: repeat;
+} */
 
 div {
     margin: 1rem 0 1rem 0;
@@ -10,13 +10,17 @@ div {
 
 div.myPadding {
     padding: 10px 10px 10px 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 12px;
 }
 
 .mainContent {
     display: block;
-    width: 60%;
+    width: 70%;
     margin: auto;
-    /* padding-top: 2rem; */
+    padding-top: 2rem;
 }
 
 #title {

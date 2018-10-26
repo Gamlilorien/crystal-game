@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-
+    <style>
+        body {
+            background-image: url("assets/images/dirt.jpg");
+            background-repeat: repeat;
+            background-color: #cccccc;
+        }
+    </style>
 
 
     <title>Crystals Collector</title>
@@ -19,72 +25,69 @@
 <div class="mainContent">
 
     <!-- TITLE -->
-    <div id="Title" class="myPadding">
+    <div id="Title" class="col-6 myPadding">
         <h1>Crystals Collector!</h1>
     </div>
 
     <!-- INSTRUCTIONS -->
     <div id="instructions" class="myPadding">
-        <p>
+        <h4>
             Welcome to the Dwarven Mines and Casino!
+        </h4>
+        <p>
+            Below are four recently mined crystals. Clicking on a crystal will cause your total score to increase by a certian number of points. You win the game by matching your total score with the random number generated below. You loose the game if your total score goes over this random number.
         </p>
         <p>
-            Below are four recently mined crystals.
+            The value of each crystal is hidden from you until you click on it. After each game the point value for each crystal will randomly change.
         </p>
         <p>
-            By clicking on a crystal you will see your total score increase by a certian number of points.
-        </p>
-        <p>
-            You win the game by matching your total score with the random number generated below.
-        </p>
-        <p>
-            You loose the game if your total score goes over this random number.
-        </p>
-        <p>
-            The value of each crystal is hidden from you until you click on it.
-        </p>
-        <p>
-            After each game the point value for each crystal will randomly change.
+            Collect your crystals!
         </p>
     </div>
 
     <!-- TARGET NUMBER TO MATCH; WINS/LOSSES scoreboard -->
     <div class="container">
         <div class="row">
-            <div class="col-8 myPadding targetNumber">
+            <div class="col-4 myPadding targetNumber">
+                <h2>Random #:</h2>
                 <h2 id="targetNumber">39</h2>
             </div>
 
-            <div id="scoreboard" class="col-4 myPadding">
+            <div id="scoreboard" class="col-3 myPadding">
                 <h3>Wins: <span id="wins">0</span></h3>
                 <h3>Losses: <span id="losses">0</span></h3>
             </div>
-        </div>
+
+            <div class="col-4 myPadding score">
+                <h2>Your score:</h2>
+                <h2 id="totalScore">0</h2>
+            </div>
     </div>
 
     <!-- 4 GEMS -->
     <div class="container">
             <div class="row">
                 <div id="diamond" class="col-3">
-                    <img src="assets/images/diamond.jpg" class="crystal" alt="diamond">
+                    <img src="assets/images/diamond.png" class="crystal" alt="diamond">
                 </div>
     
                 <div id="emerald" class="col-3">
-                    <img src="assets/images/emerald.jpg" class="crystal" alt="emerald">
+                    <img src="assets/images/emerald.png" class="crystal" alt="emerald">
                 </div>
 
                 <div id="ruby" class="col-3">
-                    <img src="assets/images/ruby.jpg" class="crystal" alt="diamond">
+                    <img src="assets/images/ruby.png" class="crystal" alt="diamond">
                 </div>
         
                 <div id="sapphire" class="col-3">
-                    <img src="assets/images/sapphire.jpg" class="crystal" alt="emerald">
+                    <img src="assets/images/sapphire.png" class="crystal" alt="emerald">
                 </div>
             </div>
     </div>
 
     <!-- YOUR TOTAL SCORE IS TITLE -->
-    <div class="container">
+    <!-- Moved above to look better -->
+    <!-- <div class="container">
             <div class="col-8 score">
                 <div class="row myPadding">
                     <h3>Your total score is:</h3>
@@ -94,7 +97,7 @@
                     <h3 id="totalScore">0</h3>
                 </div>
             </div>
-    </div>
+    </div> -->
 
     <!-- MY CURRENT SCORE TOTAL -->
 
