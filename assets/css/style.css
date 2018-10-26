@@ -1,0 +1,47 @@
+body {
+    background-image: url ("assets/images/cave2.png");
+    background-repeat: repeat-y;
+    /* background-color: #c71717; */
+}
+
+div {
+    margin: 1rem 0 1rem 0;
+}
+
+div.myPadding {
+    padding: 10px 10px 10px 10px;
+}
+
+.mainContent {
+    display: block;
+    width: 60%;
+    margin: auto;
+    /* padding-top: 2rem; */
+}
+
+#title {
+    background-color: #C6702D;
+    color: white;
+}
+
+#instructions {
+    background-color: #FAE6CE;
+    color: green;
+}
+
+#randomNumber {
+    background-color: #5ABB7C;
+    font-size: 1.5rem;
+}
+
+#scoreboard {
+    background-color: #56FDFB;
+}
+
+.crystal {
+    width: 95%;
+}
+
+.yourScore {
+    background-color: #2B897D;
+}

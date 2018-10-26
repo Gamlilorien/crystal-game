@@ -5,15 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
 
 
-    <title>Document</title>
+    <title>Crystals Collector</title>
 </head>
 <body>
 
-    <h1>Testing...</h1>
+    <!-- We need a 6 row single column layout, preferably centered -->
+    <!-- Tiled image background? -->
+<div class="mainContent">
+
+    <!-- TITLE -->
+    <div id="Title" class="myPadding">
+        <h1>Crystals Collector!</h1>
+    </div>
+
+    <!-- INSTRUCTIONS -->
+    <div id="instructions" class="myPadding">
+        <p>
+            Welcome to the Dwarven Mines and Casino!
+        </p>
+        <p>
+            Below are four recently mined crystals.
+        </p>
+        <p>
+            By clicking on a crystal you will see your total score increase by a certian number of points.
+        </p>
+        <p>
+            You win the game by matching your total score with the random number generated below.
+        </p>
+        <p>
+            You loose the game if your total score goes over this random number.
+        </p>
+        <p>
+            The value of each crystal is hidden from you until you click on it.
+        </p>
+        <p>
+            After each game the point value for each crystal will randomly change.
+        </p>
+    </div>
+
+    <!-- RANDOM SCORE TO MATCH; WINS/LOSSES scoreboard -->
+    <div class="container">
+        <div class="row">
+            <div id="randomNumber" class="col-8 myPadding">
+                <h2>39</h2>
+            </div>
+
+            <div id="scoreboard" class="col-4 myPadding">
+                <h3>Wins: <span id="wins">0</span></h3>
+                <h3>Losses: <span id="losses">0</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4 GEMS -->
+    <div class="container">
+            <div class="row">
+                <div id="diamond" class="col-3">
+                    <img src="assets/images/diamond.jpg" class="crystal" alt="diamond">
+                </div>
+    
+                <div id="emerald" class="col-3">
+                    <img src="assets/images/emerald.jpg" class="crystal" alt="emerald">
+                </div>
+
+                <div id="ruby" class="col-3">
+                    <img src="assets/images/ruby.jpg" class="crystal" alt="diamond">
+                </div>
+        
+                <div id="sapphire" class="col-3">
+                    <img src="assets/images/sapphire.jpg" class="crystal" alt="emerald">
+                </div>
+            </div>
+    </div>
+
+    <!-- YOUR TOTAL SCORE IS TITLE -->
+    <div class="container">
+            <div class="col-8 yourScore">
+                <div class="row myPadding">
+                    <h3>Your score is:</h3>
+                </div>
+
+                <div class="row myPadding">
+                    <h3 id="yourScore">0</h3>
+                </div>
+            </div>
+    </div>
+
+    <!-- MY CURRENT SCORE TOTAL -->
+
+</div>
     
 <!-- JavaScript link -->
     <script src="assets/javascript/game.js" type="text/javascript"></script>
