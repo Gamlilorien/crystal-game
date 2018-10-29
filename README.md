@@ -14,7 +14,7 @@ The objective is for the user to click on a number of crystals so that their tot
 
 If they are able to match this number exactly they win and the game resets. If however their current total score ever exceeds the target number they loose, and the game resets but keeps the current score.
 
-![crystal-game](crystal-game/assets/images/crystal-game.png)
+![crystal-game](https://gamlilorien.github.io/crystal-game/assets/images/crystal-game.png)
 
 1. [Watch the demo](https://youtu.be/yNI0l2FMeCk).
 
