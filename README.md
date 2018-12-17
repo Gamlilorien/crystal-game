@@ -39,15 +39,4 @@ If they are able to match this number exactly they win and the game resets. If h
 
    * The game restarts whenever the player wins or loses.
 
-     * When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
-
-   * The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
-
-
-### Create a README.md
-
-Add a `README.md` to your repository describing the project. Here are some resources for creating your `README.md`. Here are some resources to help you along the way:
-
-* [About READMEs](https://help.github.com/articles/about-readmes/)
-
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+     * When the game begins again, a new random number will become visible. Also, all the crystals will have four new hidden values. Only when starting a new game will the user's score (and the score counter) reset to zero.
