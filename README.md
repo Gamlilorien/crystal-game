@@ -1,4 +1,4 @@
-# crystal-game
+# Crystal Collector
 
 ### Overview
 
